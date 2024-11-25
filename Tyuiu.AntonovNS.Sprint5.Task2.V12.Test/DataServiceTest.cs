@@ -15,7 +15,7 @@ namespace Tyuiu.AntonovNS.Sprint5.Task2.V12.Test
             bool wait = true;
             int[,] x = { { -5, -5, 9 }, { -7, 3, -4 }, { 8, 7, 9 } };
             string path1 = ds.SaveToFileTextData(x);
-            Assert.AreEqual(wait, fileExists);
+            Assert.AreEqual("0;0;1\n0;1;0\n1;1;1", path1);
         }
     }
 }

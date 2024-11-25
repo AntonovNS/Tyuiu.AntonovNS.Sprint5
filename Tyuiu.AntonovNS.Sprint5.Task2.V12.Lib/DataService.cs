@@ -14,29 +14,37 @@ namespace Tyuiu.AntonovNS.Sprint5.Task2.V12.Lib
             {
                 File.Delete(path);
             }
-            for (int i = 3; i < 3; i++)
+            for (int i = 0; i < 3; i++)
             {
-                for (int j = 3; j < 3; j++)
+                for (int j = 0; j < 3; j++)
                 {
                     if (matrix[i, j] >= 0)
                     {
                         matrix[i, j] = 1;
                     }
-                    else 
+                    else
                     {
                         matrix[i, j] = 0;
                     }
                 }
             }
-            for (int i = 3; i < 3; i++)
+            string s="";
+            for (int i = 0; i < 3; i++)
             {
-                for (int j = 3; j < 3; j++)
+                for (int j = 0; j < 3; j++)
                 {
-                    File.AppendAllText(path, Convert.ToString(matrix[i,j]+";"));
+                    s += Convert.ToString(matrix[i,j]);
+                    if (j != 2) 
+                    {
+                        s += ";";
+                    }
                 }
-                File.AppendAllText(path, Convert.ToString("\n"));
+                if (i != 2)
+                {
+                    s += "\n";
+                }
             }
-            return path;
+            return s;
         }
     }
 }
