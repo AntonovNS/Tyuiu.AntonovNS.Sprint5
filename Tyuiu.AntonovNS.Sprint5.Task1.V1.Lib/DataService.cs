@@ -20,10 +20,12 @@ namespace Tyuiu.AntonovNS.Sprint5.Task1.V1.Lib
                 if (res == 0)
                 {
                     File.AppendAllText(path, Convert.ToString(0));
+                    File.AppendAllText(path, Convert.ToString("\n"));
                 }
                 else
                 {
                     File.AppendAllText(path, Convert.ToString(res));
+                    File.AppendAllText(path, Convert.ToString("\n"));
                 }
             }
             return path;
