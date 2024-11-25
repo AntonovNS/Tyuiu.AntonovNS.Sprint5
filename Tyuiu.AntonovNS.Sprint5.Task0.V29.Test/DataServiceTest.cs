@@ -10,7 +10,7 @@ namespace Tyuiu.AntonovNS.Sprint5.Task0.V29.Test
         {
             int x = 3;
             DataService ds = new DataService();
-            string path = @"C:\Users\Пользователь\source\repos\Tyuiu.AntonovNS.Sprint5\Tyuiu.AntonovNS.Sprint5.Task0.V29\bin\Debug\net8.0\OutPutFileTask0.txt";
+            string path = Path.GetTempFileName();
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             bool wait = true;
