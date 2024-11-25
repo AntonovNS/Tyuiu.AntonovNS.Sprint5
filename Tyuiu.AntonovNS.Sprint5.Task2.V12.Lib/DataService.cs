@@ -7,7 +7,7 @@ namespace Tyuiu.AntonovNS.Sprint5.Task2.V12.Lib
     {
         public string SaveToFileTextData(int[,] matrix)
         {
-            string path = $@"{Path.GetTempPath()}\OutPutFileTask2.txt";
+            string path = $@"{Path.GetTempPath()}\OutPutFileTask2.csv";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             if (fileExists)
@@ -32,7 +32,7 @@ namespace Tyuiu.AntonovNS.Sprint5.Task2.V12.Lib
             {
                 for (int j = 3; j < 3; j++)
                 {
-                    File.AppendAllText(path, Convert.ToString(matrix[i,j]));
+                    File.AppendAllText(path, Convert.ToString(matrix[i,j]+";"));
                 }
                 File.AppendAllText(path, Convert.ToString("\n"));
             }
