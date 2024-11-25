@@ -13,7 +13,7 @@ namespace Tyuiu.AntonovNS.Sprint5.Task2.V12
             Console.WriteLine("#* Спринт #5                                                              *");
             Console.WriteLine("* Тема: Базовые навыки работы в C#                                        *");
             Console.WriteLine("* Задание #2                                                              *");
-            Console.WriteLine("* Вариант #12                                                              *");
+            Console.WriteLine("* Вариант #12                                                             *");
             Console.WriteLine("* Выполнил: Антонов Никита Сергеевич |  ИСТНб-24-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Условие:                                                                *");
