@@ -1,0 +1,19 @@
+﻿using System.IO;
+using tyuiu.cources.programming.interfaces;
+using tyuiu.cources.programming.interfaces.Sprint5;
+namespace Tyuiu.AntonovNS.Sprint5.Task1.V1.Lib
+{
+    public class DataService : ISprint5Task1V1
+    {
+        public string SaveToFileTextData(int startValue, int stopValue)
+        {
+            string path = $@"{Path.GetTempPath()}\OutPutFileTask1.txt";
+            for (int i = startValue; i < stopValue; i++)
+            {
+                double res = (5 * i + 2.5)/(Math.Sin(i) + 2) + 2 * i + 2;
+                File.WriteAllText(path, Convert.ToString(res));
+            }
+            return path;
+        }
+    }
+}
