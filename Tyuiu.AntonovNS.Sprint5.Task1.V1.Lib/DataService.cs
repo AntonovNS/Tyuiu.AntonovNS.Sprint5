@@ -16,7 +16,7 @@ namespace Tyuiu.AntonovNS.Sprint5.Task1.V1.Lib
             }
             for (int i = startValue; i < stopValue; i++)
             {
-                double res = Math.Round((5 * i + 2.5)/(Math.Ceiling(Math.Sin(i)) + 2) + 2 * i + 2,2);
+                double res = Math.Round((5 * i + 2.5)/(Math.Ceiling(Math.Sin(i)) + 2) + 2 * i + 2,3);
                 if (res == 0)
                 {
                     File.AppendAllText(path, Convert.ToString(0));
