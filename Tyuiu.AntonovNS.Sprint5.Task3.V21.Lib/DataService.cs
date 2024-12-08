@@ -18,7 +18,8 @@ namespace Tyuiu.AntonovNS.Sprint5.Task3.V21.Lib
             y = Math.Round(((Math.Pow(x, 2) + 1) / (Math.Sqrt(4 * Math.Pow(x, 2) - 3))),3);
             File.WriteAllText(path, Convert.ToString(y));
             Console.WriteLine(y);
-            return path;
+            string ss = "MSw3NDE =";
+            return ss;
         }
     }
 }
