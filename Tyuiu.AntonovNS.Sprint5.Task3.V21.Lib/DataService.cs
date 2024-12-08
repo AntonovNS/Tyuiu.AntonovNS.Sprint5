@@ -18,7 +18,7 @@ namespace Tyuiu.AntonovNS.Sprint5.Task3.V21.Lib
             y = Math.Round(((Math.Pow(x, 2) + 1) / (Math.Sqrt(4 * Math.Pow(x, 2) - 3))),3);
             string d = Convert.ToString(y);
             File.WriteAllText(path, Convert.ToString(y));
-            return d;
+            return path;
         }
     }
 }
