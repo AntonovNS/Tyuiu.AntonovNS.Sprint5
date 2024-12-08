@@ -31,8 +31,6 @@ namespace Tyuiu.AntonovNS.Sprint5.Task3.V21
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(res);
-            Console.WriteLine("Создан!");
             using (BinaryReader reader = new BinaryReader(File.Open(res, FileMode.Open)))
             {
                 int a = reader.ReadInt32();
