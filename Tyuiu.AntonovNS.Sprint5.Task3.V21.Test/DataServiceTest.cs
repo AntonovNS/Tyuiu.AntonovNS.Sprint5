@@ -13,8 +13,9 @@ namespace Tyuiu.AntonovNS.Sprint5.Task3.V21.Test
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             int x = 3;
+            string wait = "1,741";
             string path1 = ds.SaveToFileTextData(x);
-            Assert.AreEqual(path, path1);
+            Assert.AreEqual(wait, path1);
         }
     }
 }

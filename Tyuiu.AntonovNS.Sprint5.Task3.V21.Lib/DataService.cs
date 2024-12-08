@@ -16,10 +16,9 @@ namespace Tyuiu.AntonovNS.Sprint5.Task3.V21.Lib
             }
             double y;
             y = Math.Round(((Math.Pow(x, 2) + 1) / (Math.Sqrt(4 * Math.Pow(x, 2) - 3))),3);
+            string d = Convert.ToString(y);
             File.WriteAllText(path, Convert.ToString(y));
-            Console.WriteLine(y);
-            string ss = "QmDl0CLb+z8=";
-            return ss;
+            return d;
         }
     }
 }
