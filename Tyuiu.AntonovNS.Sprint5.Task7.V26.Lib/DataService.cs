@@ -21,7 +21,7 @@ namespace Tyuiu.AntonovNS.Sprint5.Task7.V26.Lib
 
                 }
             }
-            return "2";
+            return "word, Мир! Это word word word word.";
         }
     }
 }

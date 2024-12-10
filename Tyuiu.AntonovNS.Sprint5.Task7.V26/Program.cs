@@ -1,5 +1,5 @@
 ﻿using Tyuiu.AntonovNS.Sprint5.Task7.V26.Lib;
-namespace Tyuiu.AntonovNS.Sprint5.Task7.V27
+namespace Tyuiu.AntonovNS.Sprint5.Task7.V26
 {
     internal class Program
     {
@@ -21,7 +21,7 @@ namespace Tyuiu.AntonovNS.Sprint5.Task7.V27
             Console.WriteLine("* Исходные данные:                                                        *");
             Console.WriteLine("***************************************************************************");
             string path = "C:\\DataSpring5\\InPutDataFileTask6V17.txt";
-            double res = ds.LoadFromDataFile(path);
+            double res = ds.LoadDataAndSave(path);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
