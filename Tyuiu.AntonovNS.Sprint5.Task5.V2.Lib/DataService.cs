@@ -13,9 +13,9 @@ namespace Tyuiu.AntonovNS.Sprint5.Task5.V2.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    if (Convert.ToDouble(line) >= 0)
+                    if (double.TryParse(line, out double number) && number >= 0)
                     {
-                        res = res + Convert.ToDouble(line);
+                        res = res + number;
                         s++;
                     }
 
