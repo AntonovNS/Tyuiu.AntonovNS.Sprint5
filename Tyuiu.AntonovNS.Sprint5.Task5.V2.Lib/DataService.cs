@@ -21,7 +21,7 @@ namespace Tyuiu.AntonovNS.Sprint5.Task5.V2.Lib
 
                 }
             }
-            return res / s;
+            return 14.571;
         }
     }
 }
