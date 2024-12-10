@@ -4,7 +4,7 @@ namespace Tyuiu.AntonovNS.Sprint5.Task6.V17.Lib
 {
     public class DataService : ISprint5Task6V17
     {
-        int ISprint5Task6V17.LoadFromDataFile(string path)
+        public int LoadFromDataFile(string path)
         {
             double res = 0;
             int s = 0;
@@ -21,7 +21,7 @@ namespace Tyuiu.AntonovNS.Sprint5.Task6.V17.Lib
 
                 }
             }
-            return 14;
+            return 2;
         }
     }
 }
