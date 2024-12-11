@@ -1,4 +1,6 @@
 ﻿using System.IO;
+using System.Reflection.PortableExecutable;
+using System.Text;
 using Tyuiu.AntonovNS.Sprint5.Task3.V21.Lib;
 namespace Tyuiu.AntonovNS.Sprint5.Task3.V21
 {
@@ -27,15 +29,10 @@ namespace Tyuiu.AntonovNS.Sprint5.Task3.V21
             Console.WriteLine("* Исходные данные:                                                        *");
             Console.WriteLine("***************************************************************************");
             int x = 3;
-            string res = ds.SaveToFileTextData(x);
+            string path = ds.SaveToFileTextData(x);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            using (BinaryReader reader = new BinaryReader(File.Open(res, FileMode.Open)))
-            {
-                int a = reader.ReadInt32();
-                Console.WriteLine(a);
-            }
             Console.ReadKey();
         }
     }

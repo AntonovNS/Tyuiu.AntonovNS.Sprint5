@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Text;
 using tyuiu.cources.programming.interfaces;
 using tyuiu.cources.programming.interfaces.Sprint5;
 namespace Tyuiu.AntonovNS.Sprint5.Task3.V21.Lib
@@ -16,7 +17,11 @@ namespace Tyuiu.AntonovNS.Sprint5.Task3.V21.Lib
             }
             double y;
             y = Math.Round(((Math.Pow(x, 2) + 1) / (Math.Sqrt(4 * Math.Pow(x, 2) - 3))), 3);
-            return Convert.ToString(y);
+            using (BinaryWriter writer = new BinaryWriter(File.Open(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8)))
+            {
+                writer.Write(BitConverter.GetBytes(y));
+            }
+            return path;
         }
     }
 }
