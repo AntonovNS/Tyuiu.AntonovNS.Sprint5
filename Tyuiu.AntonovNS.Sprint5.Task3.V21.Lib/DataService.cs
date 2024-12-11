@@ -17,7 +17,8 @@ namespace Tyuiu.AntonovNS.Sprint5.Task3.V21.Lib
             }
             double y;
             y = Math.Round(((Math.Pow(x, 2) + 1) / (Math.Sqrt(4 * Math.Pow(x, 2) - 3))), 3);
-            using (BinaryWriter writer = new BinaryWriter(File.Open(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8)))
+            using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+            using (BinaryWriter writer = new BinaryWriter(fs))
             {
                 writer.Write(BitConverter.GetBytes(y));
             }
